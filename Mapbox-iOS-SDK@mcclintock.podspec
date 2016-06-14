@@ -12,7 +12,7 @@ Pod::Spec.new do |m|
   m.source = { :git => 'git@github.com:mcclintock-lab/Mapbox-iOS-SDK.git', :tag => m.version.to_s }
 
   m.platform              = :ios
-  m.ios.deployment_target = '5.0'
+  m.ios.deployment_target = '9.0'
   m.requires_arc          = true
 
   m.module_name = 'Mapbox_iOS_SDK'
