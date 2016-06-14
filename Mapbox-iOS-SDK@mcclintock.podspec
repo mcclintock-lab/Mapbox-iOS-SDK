@@ -76,7 +76,8 @@ Pod::Spec.new do |m|
   m.libraries = 'Proj4', 'sqlite3', 'z'
 
   m.xcconfig = {
-    'OTHER_LDFLAGS'        => '-ObjC -arch arm64'
+    'OTHER_LDFLAGS'        => '-ObjC -arch arm64',
+    'ARCHS' => 'arm64'
   }
 
   m.preserve_paths = 'MapView/MapView.xcodeproj', 'MapView/Map/Resources'
