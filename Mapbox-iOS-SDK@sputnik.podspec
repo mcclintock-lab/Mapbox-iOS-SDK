@@ -1,16 +1,15 @@
 Pod::Spec.new do |m|
 
-  m.name    = 'Mapbox-iOS-SDK@sputnik'
-  m.version = '1.6.4-sputnik'
+  m.name    = 'Mapbox-iOS-SDK@mcclintock'
+  m.version = '1.6.5-mcclintock'
 
-  m.summary          = 'Fork of MapBox iOS SDK with some patches.'
+  m.summary          = 'Fork of MapBox iOS SDK.'
   m.description      = 'An open source toolset for building mapping applications for iOS devices with great flexibility for visual styling, offline use, and customizability.'
-  m.homepage         = 'https://github.com/sputnik-ru/Mapbox-iOS-SDK'
+  m.homepage         = 'https://github.com/mcclintock-lab/Mapbox-iOS-SDK'
   m.license          = 'BSD'
-  m.author           = { 'Denis Zamataev' => 'zamataev@corp.sputnik.ru' }
-  m.screenshot       = 'https://raw.github.com/sputnik-ru/Mapbox-iOS-SDK/packaging/screenshot.png'
+  m.author           = { 'Mapbox' => 'admin@seasketch.org' }
 
-  m.source = { :git => 'https://github.com/sputnik-ru/Mapbox-iOS-SDK.git', :tag => m.version.to_s }
+  m.source = { :git => 'git@github.com:mcclintock-lab/Mapbox-iOS-SDK.git', :tag => m.version.to_s }
 
   m.platform              = :ios
   m.ios.deployment_target = '5.0'
@@ -85,7 +84,7 @@ Pod::Spec.new do |m|
 
   m.vendored_libraries = 'Proj4/libProj4.a'
 
-  m.dependency 'FMDB', '2.3'
+  m.dependency 'FMDB', '2.6'
   m.dependency 'GRMustache', '7.3.0'
   m.dependency 'SMCalloutView', '2.0'
 
